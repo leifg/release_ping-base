@@ -25,3 +25,6 @@ ENV SEMANTIC_RELEASE_VERSION=1.5.0
 
 ADD https://github.com/semantic-release/go-semantic-release/releases/download/v${SEMANTIC_RELEASE_VERSION}/semantic-release_v${SEMANTIC_RELEASE_VERSION}_linux_amd64 /usr/local/bin/semantic-release
 RUN chmod a+x /usr/local/bin/semantic-release
+
+ADD https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh /usr/local/bin/wait-for-it
+RUN chmod a+x /usr/local/bin/wait-for-it
