@@ -21,7 +21,7 @@ RUN curl -L -o /tmp/hyper.tar.gz https://hyper-install.s3.amazonaws.com/hyper-li
 
 # Install Semantic Release
 
-ENV SEMANTIC_RELEASE_VERSION=1.6.0
+ENV SEMANTIC_RELEASE_VERSION=1.6.1
 
 ADD https://github.com/semantic-release/go-semantic-release/releases/download/v${SEMANTIC_RELEASE_VERSION}/semantic-release_v${SEMANTIC_RELEASE_VERSION}_linux_amd64 /usr/local/bin/semantic-release
 RUN chmod a+x /usr/local/bin/semantic-release
